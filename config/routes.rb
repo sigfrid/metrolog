@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'dashboard#show'
-  get 'login', to: 'sessions#new', as: 'login'
+  root 'sessions#new'
+  get 'dashboard', to: 'dashboard#show', as: 'dashboard'
 
 
   resources :equipments
