@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col s12">
+    <h2>New log</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons"></i>
+        <h3>Autoclave Fedegari FOW4</h3>
+        <p>
+          Code: PV19<br>
+          Room: LVP123<br>
+          ECP tag: 123456789012345678901234<br>
+          Lines: line1, line2
+        </p>
+      </li>
+
+      <li class="collection-item avatar">
+        <i class="material-icons circle red">warning</i>
+        <h3 class="red-text">Load 200ml</h3>
+        <p>
+          Type: validation<br>
+          Frequency: 12 months<br>
+          Last log: March 18, 2014<br>
+          Due: March 18, 2015 (<%= time_ago_in_words(Date.parse('18/03/2015').to_time) %>)
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Note</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m4 l3">
+        <a class="waves-effect waves-light btn-large grey" href="#">Back</a>
+        <button class="waves-effect waves-light btn-large" type="submit" name="action">Save
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+      <div class="input-field col s12 m8 l9">
+          <input id="password_input" type="text" class="validate" required="" aria-required="true">
+          <label for="password_input" data-error="wrong">Password</label>
+      </div>
+    </div>
+  </form>
+</div>
+
+
