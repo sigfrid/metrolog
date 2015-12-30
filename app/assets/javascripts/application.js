@@ -15,3 +15,8 @@
 //= require turbolinks
 //= require materialize
 //= require_tree .
+
+  $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+

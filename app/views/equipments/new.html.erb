@@ -1,0 +1,108 @@
+<div class="row">
+  <div class="col s12">
+    <h2>New equipment</h2>
+  </div>
+</div>
+
+<form>
+  <div class="row">
+    <div class="col s12">
+      <h2>ID</h2>
+    </div>
+    <div class="input-field col s12 m6">
+      <input id="name_input" type="text">
+      <label for="name_input">Name</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <input id="code_input" type="text">
+      <label for="code_input">Code</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <select id="room_select">
+        <option value="" disabled selected>rooms</option>
+        <option value="room1">room1</option>
+        <option value="room2">room2</option>
+        <option value="room3">room3</option>
+      </select>
+    </div>
+    <div class="input-field col s12 m6">
+      <select multiple id="line_select">
+        <option value="" disabled selected>Lines</option>
+        <option value="line1">line1</option>
+        <option value="line2">line2</option>
+        <option value="line3">line3</option>
+      </select>
+    </div>
+    <div class="input-field col s12 m6">
+      <input id="tag_input" type="text" aria-required="true">
+      <label for="tag_input">EPC tag</label>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2> Activities</h2>
+    </div>
+
+    <div class="input-field col s12 m4">
+      <select id="activity_select">
+        <option value="" disabled selected>Activity</option>
+        <option value="activity1">activity1</option>
+        <option value="activity2">activity2</option>
+        <option value="activity3">activity3</option>
+      </select>
+    </div>
+    <div class="input-field col s12 m4">
+      <label for="frequency">Frequency (months)</label>
+      <input id="frequency" type="number" min="1" value="1">
+    </div>
+    <div class="input-field col s12 m4">
+      <input type="checkbox" id="external" />
+      <label for="external">Executed externally</label>
+    </div>
+
+    <div class="col s12">
+      <a href="#!">Add activity</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>SubEquipments</h2>
+    </div>
+
+    <% 20.times do |i| %>
+    <div class="input-field col s12 m3">
+      <input type="checkbox" id="sub1<%= i%>" />
+      <label for="sub1<%= i%>">Autoclave Fedegari FOW4 - PV19</label>
+    </div>
+    <div class="input-field col s12 m3">
+      <input type="checkbox" id="sub2<%= i%>" />
+      <label for="sub2<%= i%>">Autoclave Fedegari FOW4 - PV19</label>
+    </div>
+    <div class="input-field col s12 m3">
+      <input type="checkbox" id="sub3<%= i%>" />
+      <label for="sub3<%= i%>">Autoclave Fedegari FOW4 - PV19</label>
+    </div>
+    <div class="input-field col s12 m3">
+      <input type="checkbox" id="sub4<%= i%>" />
+      <label for="sub4<%= i%>">Autoclave Fedegari FOW4 - PV19</label>
+    </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <a class="waves-effect waves-light btn-large grey" href="#">Back</a>
+      <button class="waves-effect waves-light btn-large" type="submit" name="action">Save
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </div>
+</form>
+
+

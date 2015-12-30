@@ -148,7 +148,8 @@ textarea.materialize-textarea {
     &.active { color: $input-focus-color; }
   }
   .prefix ~ input,
-  .prefix ~ textarea {
+  .prefix ~ textarea,
+  .prefix ~ div.select-wrapper {
     margin-left: 3rem;
     width: 92%;
     width: calc(100% - 3rem);
@@ -620,7 +621,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   input.select-dropdown {
     position: relative;
     cursor: pointer;
-    // color: #444;
+    color: $input-border-color;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $input-border-color;
@@ -635,7 +636,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   }
 
   span.caret {
-    color: initial;
+    color: $input-border-color;
     position: absolute;
     right: 0;
     top: 16px;

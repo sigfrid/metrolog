@@ -1,3 +1,19 @@
 @charset "UTF-8";
 
 @import "materialize";
+
+// Materialize customizations
+textarea.materialize-textarea {
+  padding: 1.2rem 0;
+  height: 1rem;
+  min-height: 1rem;
+}
+
+td a {
+  color: color("grey", "darken-3");
+}
+
+
+.bold {
+  font-weight: bold;
+}
