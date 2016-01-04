@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :activities
   resources :reviews
   resources :activity_histories
+  resources :extraordinary_maintenances
 end
