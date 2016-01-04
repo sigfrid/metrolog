@@ -2,18 +2,53 @@
 
 @import "materialize";
 
-// Materialize customizations
-textarea.materialize-textarea {
-  padding: 1.2rem 0;
-  height: 1rem;
-  min-height: 1rem;
-}
-
-td a {
-  color: color("grey", "darken-3");
-}
-
 
 .bold {
   font-weight: bold;
+}
+
+
+.twitter-typeahead {
+  display: inline !important;
+}
+
+.typeahead-content {
+    position: relative;
+    cursor: pointer;
+    color: $off-black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 3rem;
+    line-height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 85px 0 0;
+    padding: 0;
+    display: block;
+}
+
+.typeahead-dataset {
+  @extend .z-depth-1;
+  margin: 0 10px;
+  background-color: white;
+}
+
+.typeahead-suggestion {
+  padding: 3px 0 3px 10px;
+  color: $dropdown-color;
+
+  &:hover {
+    background-color: $dropdown-hover-bg-color;
+  }
+}
+
+.typeahead-notfound {
+  cursor:not-allowed;
+  padding: 3px 0 3px 10px;
+}
+
+
+.typeahead-highlight {
+    font-weight: 900;
 }
