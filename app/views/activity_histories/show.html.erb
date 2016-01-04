@@ -1,0 +1,124 @@
+<div class="row">
+  <div class="col s12">
+    <h2>Log history</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons circle red">warning</i>
+        <h3 class="red-text">Autoclave Fedegari FOW4</h3>
+        <p>
+          Code: PV19<br>
+          Room: LVP123<br>
+          ECP tag: 123456789012345678901234<br>
+          Lines: line1, line2
+        </p>
+      </li>
+
+      <li class="collection-item avatar">
+        <i class="material-icons circle green">done</i>
+        <h3 class="green-text">Replace filter PPP1-X12 position on the upper lavel</h3>
+        <p>
+          Kind: maintenance<br>
+          Frequency: 6 months<br>
+          Last log: November 12, 2015<br>
+          Due: May 12, 2016
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <h2>Logs</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <form>
+      <div class="input-field">
+        <input id="filter" type="text">
+        <label for="filter">Filter</label>
+      </div>
+    </form>
+  </div>
+  <div class="col s12">
+    <a href="#modal1" class="modal-trigger">Tips for using filter</a>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col s12">
+    <table class=" highlight responsive-table">  <!-- bordered -->
+      <thead>
+        <tr>
+          <th data-field="state"></th>
+          <th data-field="log">Log</th>
+          <th data-field="logger">Logger</th>
+          <th data-field="logger-note">Logger note</th>
+          <th data-field="review">Log review</th>
+          <th data-field="reviewer">Reviewer</th>
+          <th data-field="reviewer-note">Reviewer note</th>
+          <th data-field="due-within">Due</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><i class="material-icons circle green">done</i></td>
+          <td>Nov 12, 2015</td>
+          <td>Ivan Besseghini</td>
+          <td>---</td>
+          <td>Nov 22, 2015</td>
+          <td>Abramo Civera</td>
+          <td>ok</td>
+          <td>May 22, 2016</td>
+        </tr>
+        <tr>
+          <td><i class="material-icons circle green">done</i></td>
+          <td>May 24, 2015</td>
+          <td>Ivan Besseghini</td>
+          <td>Filter replaced</td>
+          <td>May 26, 2015</td>
+          <td>Abramo Civera</td>
+          <td>---</td>
+          <td>Nov 24, 2015</td>
+        </tr>
+        <tr>
+          <td><i class="material-icons circle red">warning</i></td>
+          <td>May 20, 2015</td>
+          <td>Ivan Besseghini</td>
+          <td>ok</td>
+          <td>May 21, 2015</td>
+          <td>Abramo Civera</td>
+          <td>Filter has been mounted upside down. Activity has to be redone.</td>
+          <td>---</td>
+        </tr>
+        <tr>
+          <td><i class="material-icons circle green">done</i></td>
+          <td>Dec 17, 2014</td>
+          <td>Ivan Besseghini</td>
+          <td>ok</td>
+          <td>May 26, 2015</td>
+          <td>Abramo Civera</td>
+          <td>ok</td>
+          <td>Jun 17, 2015</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div id="modal1" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4>Tips for using filter</h4>
+    <p>A bunch of text</p>
+  </div>
+</div>
