@@ -19,46 +19,59 @@
     </div>
     <div class="input-field col s12 m6">
       <select id="room_select">
-        <option value="" disabled selected>rooms</option>
-        <option value="room1">room1</option>
-        <option value="room2">room2</option>
-        <option value="room3">room3</option>
+        <option value="" disabled selected>Room</option>
+        <option value="LSV1">LSV1</option>
+        <option value="LSV3">LSV3</option>
+        <option value="LSV4">LSV4</option>
+        <option value="LSV5">LSV5</option>
+        <option value="LSV6">LSV6</option>
+        <option value="LSV7">LSV7</option>
+        <option value="LSV8">LSV8</option>
+        <option value="LSV10">LSV10</option>
+        <option value="LSV11">LSV11</option>
       </select>
     </div>
     <div class="input-field col s12 m6">
       <select multiple id="line_select">
         <option value="" disabled selected>Lines</option>
-        <option value="line1">line1</option>
-        <option value="line2">line2</option>
-        <option value="line3">line3</option>
+        <option value="LVP">LVP</option>
+        <option value="SVP">SVP</option>
+        <option value="ASP">ASP</option>
       </select>
     </div>
     <div class="input-field col s12 m6">
       <input id="tag_input" type="text" aria-required="true">
       <label for="tag_input">EPC tag</label>
     </div>
-  </div>
 
-  <div class="divider"></div>
+    <div class="input-field col s12 m6">
+      <input id="superequipment_input" type="text" class="eqtypeahead">
+      <label for="superequipment_input">Equipment</label>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col s12">
       <h2> Activities</h2>
     </div>
 
-    <div class="input-field col s12 m4">
-      <select id="activity_select">
-        <option value="" disabled selected>Activity</option>
-        <option value="activity1">activity1</option>
-        <option value="activity2">activity2</option>
-        <option value="activity3">activity3</option>
-      </select>
+    <div class="input-field col s12 m6">
+      <input id="activity_input" type="text" class="actypeahead">
+      <label for="activity_input">Activity</label>
     </div>
-    <div class="input-field col s12 m4">
-      <label for="frequency">Frequency (months)</label>
+    <div class="input-field col s12 m2">
+      <label for="frequency">Frequency</label>
       <input id="frequency" type="number" min="1">
     </div>
-    <div class="input-field col s12 m4">
+    <div class="input-field col s12 m2">
+      <select id="activity_select">
+        <option value="" disabled selected>Period</option>
+        <option value="activity1">week(s)</option>
+        <option value="activity2">month(s)</option>
+        <option value="activity3">year(s)</option>
+      </select>
+    </div>
+    <div class="input-field col s12 m2">
       <input type="checkbox" id="external" />
       <label for="external">Executed externally</label>
     </div>
@@ -66,33 +79,6 @@
     <div class="col s12">
       <a href="#!">Add activity</a>
     </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="row">
-    <div class="col s12">
-      <h2>SubEquipments</h2>
-    </div>
-
-    <% 20.times do |i| %>
-    <div class="input-field col s12 m3">
-      <input type="checkbox" id="sub1<%= i%>" />
-      <label for="sub1<%= i%>">Autoclave Fedegari FOW4 - PV19</label>
-    </div>
-    <div class="input-field col s12 m3">
-      <input type="checkbox" id="sub2<%= i%>" />
-      <label for="sub2<%= i%>">Autoclave Fedegari FOW4 - PV19</label>
-    </div>
-    <div class="input-field col s12 m3">
-      <input type="checkbox" id="sub3<%= i%>" />
-      <label for="sub3<%= i%>">Autoclave Fedegari FOW4 - PV19</label>
-    </div>
-    <div class="input-field col s12 m3">
-      <input type="checkbox" id="sub4<%= i%>" />
-      <label for="sub4<%= i%>">Autoclave Fedegari FOW4 - PV19</label>
-    </div>
-    <% end %>
   </div>
 
   <div class="row">
