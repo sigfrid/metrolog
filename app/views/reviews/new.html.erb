@@ -12,7 +12,7 @@
         <h3 class="red-text">Autoclave Fedegari FOW4</h3>
         <p>
           Code: PV19<br>
-          Room: LVP123<br>
+          Room: LSV11<br>
           ECP tag: 123456789012345678901234<br>
           Lines: line1, line2
         </p>
@@ -20,14 +20,14 @@
 
       <li class="collection-item avatar">
         <i class="material-icons circle darken-3">schedule</i>
-        <h3>Replace pump</h3>
+        <h3>Check mains water filter clogging</h3>
         <p>
           Kind: Maintenance<br>
-          Frequency: 6 months<br>
+          Frequency: 1 month<br>
           Log: December 14, 2015<br>
           Logger: Ivan Besseghini<br>
-          Log note: Pump has been replaced without any issues. New pump works as expected.<br>
-          Due: December 20, 2015
+          Log note: Filter appears clean.<br>
+          Due: December 21, 2015
         </p>
       </li>
     </ul>
@@ -37,6 +37,13 @@
 <div class="row">
   <form class="col s12">
     <div class="row">
+      <div class="input-field col s12 m6">
+      <select id="room_select">
+        <option value="" disabled selected>Outcome</option>
+        <option value="calibration">positive</option>
+        <option value="maintenance">negative</option>
+      </select>
+    </div>
       <div class="input-field col s12">
         <textarea id="textarea1" class="materialize-textarea"></textarea>
         <label for="textarea1">Review note</label>
