@@ -1,6 +1,6 @@
 //MATERIALIZE
 /*** Colors ***/
-$primary-color: color("lime", "darken-4") !default;
+$primary-color: color("grey", "darken-1") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
