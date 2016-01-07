@@ -40,13 +40,44 @@
       </select>
     </div>
     <div class="input-field col s12 m6">
-      <input id="tag_input" type="text" aria-required="true">
-      <label for="tag_input">EPC tag</label>
+      <select multiple id="line_select">
+        <option value="" disabled selected>Critality</option>
+        <option value="high">high</option>
+        <option value="low">low</option>
+      </select>
     </div>
-
     <div class="input-field col s12 m6">
       <input id="superequipment_input" type="text" class="eqtypeahead">
       <label for="superequipment_input">Equipment</label>
+    </div>
+    <div class="input-field col s12 m2">
+      <input type="checkbox" id="support" />
+      <label for="support">Support equipment</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <h2>RFID</h2>
+    </div>
+    <div class="input-field col s12">
+      <input id="tag_input" type="text" aria-required="true">
+      <label for="tag_input">EPC tag</label>
+    </div>
+  </div>
+
+    <div class="row">
+    <div class="col s12">
+      <h2>Documents</h2>
+    </div>
+    <div class="file-field input-field col s12">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" multiple>
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+      </div>
     </div>
   </div>
 
@@ -55,15 +86,19 @@
       <h2> Activities</h2>
     </div>
 
-    <div class="input-field col s12 m6">
+    <div class="input-field col s12 m10">
       <input id="activity_input" type="text" class="actypeahead">
       <label for="activity_input">Activity</label>
     </div>
     <div class="input-field col s12 m2">
+      <input type="checkbox" id="external" />
+      <label for="external">Executed externally</label>
+    </div>
+    <div class="input-field col s12 m3">
       <label for="frequency">Frequency</label>
       <input id="frequency" type="number" min="1">
     </div>
-    <div class="input-field col s12 m2">
+    <div class="input-field col s12 m3">
       <select id="activity_select">
         <option value="" disabled selected>Period</option>
         <option value="activity1">week(s)</option>
@@ -71,9 +106,27 @@
         <option value="activity3">year(s)</option>
       </select>
     </div>
-    <div class="input-field col s12 m2">
-      <input type="checkbox" id="external" />
-      <label for="external">Executed externally</label>
+     <div class="input-field col s12 m3">
+      <label for="frequency">Extension</label>
+      <input id="frequency" type="number" min="1">
+    </div>
+    <div class="input-field col s4 m1">
+
+
+      <input type="checkbox" id="week" />
+      <label for="week">week</label>
+
+</div>
+    <div class="input-field col s4 m1">
+      <input type="checkbox" id="month" />
+      <label for="month">month</label>
+ </div>
+     <div class="input-field col s4 m1">
+      <input type="checkbox" id="year" />
+      <label for="year">year</label>
+
+
+
     </div>
 
     <div class="col s12">
