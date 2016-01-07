@@ -83,6 +83,12 @@
 
     activity_typeahead.unwrap();
 
+
+    $(".active-trigger").click(function(event){
+      event.preventDefault();
+      $('#'+$(this).data("target")).prop("disabled", false);
+    });
+
   });
 
 var equipments = [  'Autoclave Fedegari FOW4 - PV19',

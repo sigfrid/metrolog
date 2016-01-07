@@ -26,6 +26,7 @@
           Frequency: 1 month<br>
           Log: December 14, 2015<br>
           Logger: Ivan Besseghini<br>
+          Equipment: xxxxx<br>
           Log note: Filter appears clean.<br>
           Due: December 21, 2015
         </p>
@@ -37,13 +38,37 @@
 <div class="row">
   <form class="col s12">
     <div class="row">
+
+
       <div class="input-field col s12 m6">
-      <select id="room_select">
-        <option value="" disabled selected>Outcome</option>
-        <option value="calibration">positive</option>
-        <option value="maintenance">negative</option>
-      </select>
-    </div>
+        <i class="material-icons prefix active-trigger" data-target="as_found_input">mode_edit</i>
+        <input disabled value="121.7" id="as_found_input" type="text">
+        <label for="as_found_input">As found</label>
+      </div>
+
+      <div class="input-field col s12 m6">
+        <i class="material-icons prefix active-trigger" data-target="post_activity_input">mode_edit</i>
+        <input disabled value="120.0" id="post_activity_input" type="text">
+        <label for="post_activity_input">Post activity</label>
+      </div>
+
+      <div class="file-field input-field col s12">
+        <div class="btn">
+          <span>File</span>
+          <input type="file" multiple>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" placeholder="Upload one or more files">
+        </div>
+      </div>
+
+      <div class="input-field col s12">
+        <select id="room_select">
+          <option value="" disabled selected>Outcome</option>
+          <option value="calibration">positive</option>
+          <option value="maintenance">negative</option>
+        </select>
+      </div>
       <div class="input-field col s12">
         <textarea id="textarea1" class="materialize-textarea"></textarea>
         <label for="textarea1">Review note</label>
@@ -58,8 +83,8 @@
         </button>
       </div>
       <div class="input-field col s12 m8 l9">
-          <input id="password_input" type="text" class="validate" required="" aria-required="true">
-          <label for="password_input" data-error="wrong">Password</label>
+        <input id="password_input" type="text" class="validate" required="" aria-required="true">
+        <label for="password_input" data-error="wrong">Password</label>
       </div>
     </div>
   </form>
