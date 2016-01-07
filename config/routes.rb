@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   resources :activity_histories
   resources :extraordinary_maintenances
   resources :equipment_histories
+  resources :lines
 end
